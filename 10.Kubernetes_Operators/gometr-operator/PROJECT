@@ -1,0 +1,16 @@
+domain: slurm.io
+layout:
+- go.kubebuilder.io/v3
+projectName: gometr-operator
+repo: slurm.io/gometr-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: slurm.io
+  group: gometr
+  kind: Deployment
+  path: slurm.io/gometr-operator/api/v1
+  version: v1
+version: "3"
